@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-07-2021 a las 15:55:16
--- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.4.3
+-- Tiempo de generación: 30-07-2021 a las 18:09:08
+-- Versión del servidor: 10.4.14-MariaDB
+-- Versión de PHP: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -28,7 +27,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `circulares`
 --
 
-REATE TABLE `circulares` (
+CREATE TABLE `circulares` (
   `id` int(50) NOT NULL,
   `n_circular` int(50) NOT NULL,
   `fecha_emision` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
@@ -42,10 +41,9 @@ REATE TABLE `circulares` (
 -- Estructura de tabla para la tabla `memorandum`
 --
 
-
 CREATE TABLE `memorandum` (
   `id` int(50) NOT NULL,
-  `n_nota` int(50) NOT NULL,
+  `n_memorandum` int(50) NOT NULL,
   `fecha_emision` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `dirigido_a` varchar(50) NOT NULL,
   `observaciones` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL
@@ -72,7 +70,7 @@ CREATE TABLE `notas` (
 --
 -- Indices de la tabla `circulares`
 --
-AALTER TABLE `circulares`
+ALTER TABLE `circulares`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -92,10 +90,22 @@ ALTER TABLE `notas`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `circulares`
+--
+ALTER TABLE `circulares`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de la tabla `memorandum`
+--
+ALTER TABLE `memorandum`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de la tabla `notas`
 --
 ALTER TABLE `notas`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
