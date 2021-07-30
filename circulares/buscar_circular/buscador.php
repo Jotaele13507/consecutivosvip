@@ -10,14 +10,14 @@
         </thead>
         <?php 
 $con = mysqli_connect('localhost','root','','correspondencia');
-$consulta = "SELECT * FROM circulares WHERE circulares LIKE LOWER('%".$_POST["buscar"]."%') OR dirigido_a LIKE LOWER ('%".$_POST["buscar"]."%')";
+$consulta = "SELECT * FROM circulares WHERE n_circular LIKE LOWER('%".$_POST["buscar"]."%') OR dirigido_a LIKE LOWER ('%".$_POST["buscar"]."%')";
 $buscardor=mysqli_query($con,$consulta); 
 $resultado = mysqli_num_rows($buscardor);
 $numero = mysqli_num_rows($buscardor);
 echo "<b> Resultados encontrados: $numero </b>";
 while($resultado = mysqli_fetch_assoc($buscardor)){ 
    echo "<td>";
-   echo $resultado['n_nota'];
+   echo $resultado['n_circular'];
    echo "</td>";
    echo "<td>";
    echo $resultado['fecha_emision']; 
