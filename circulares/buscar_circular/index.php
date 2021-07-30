@@ -21,7 +21,7 @@
             <label class="form-label">Dirigida A</label>
             <input type="text" class="form-control" id="buscar" name="buscar">
 
-            <label class="form-label">Número de Nota</label>
+            <label class="form-label">Número de Circular</label>
             <input onkeyup="buscar_ahora($('#buscar_1').val());" type="text" class="form-control" id="buscar_1" name="buscar_1">
 
         </div>

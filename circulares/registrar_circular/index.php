@@ -13,7 +13,7 @@ $fecha_emision = date("Y-m-d, H:i:s");
 
 <body>
     <form action="action.php" method="POST" id="registro" enctype="multipart/form-data">
-    <span class="label-input100">Número de Nota</span>
+    <span class="label-input100">Número de Circular</span>
     <input type="text" name="n_nota" placeholder="Número de Nota">
     <span class="label-input100">Fecha de Emisión</span>
     <input type="datetime" name="fecha_emisión" id="fecha_emision" value="<?= $fecha_emision?>" disabled>

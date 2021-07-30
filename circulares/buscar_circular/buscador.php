@@ -10,7 +10,7 @@
         </thead>
         <?php 
 $con = mysqli_connect('localhost','root','','correspondencia');
-$consulta = "SELECT * FROM notas WHERE n_nota LIKE LOWER('%".$_POST["buscar"]."%') OR dirigido_a LIKE LOWER ('%".$_POST["buscar"]."%')";
+$consulta = "SELECT * FROM circulares WHERE circulares LIKE LOWER('%".$_POST["buscar"]."%') OR dirigido_a LIKE LOWER ('%".$_POST["buscar"]."%')";
 $buscardor=mysqli_query($con,$consulta); 
 $resultado = mysqli_num_rows($buscardor);
 $numero = mysqli_num_rows($buscardor);

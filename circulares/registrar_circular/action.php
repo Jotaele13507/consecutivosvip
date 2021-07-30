@@ -6,10 +6,10 @@ $conn = mysqli_connect('localhost', 'root', '', 'correspondencia');
     $dirigido_a = $_POST['dirigido_a'];
     $observaciones = $_POST['observaciones'];
     
-    $stm = "INSERT INTO notas (n_nota,fecha_emision,dirigido_a,observaciones) 
+    $stm = "INSERT INTO circulares (n_nota,fecha_emision,dirigido_a,observaciones) 
     VALUES ('$n_nota', NOW(),'$dirigido_a','$observaciones')";
     $result = mysqli_query($conn, $stm);
 
-    header('location: ../notas/index.php');
+    header('location: ../circulares/index.php');
  
 ?>

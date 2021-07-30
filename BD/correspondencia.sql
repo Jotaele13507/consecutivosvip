@@ -25,6 +25,35 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `circulares`
+--
+
+REATE TABLE `circulares` (
+  `id` int(50) NOT NULL,
+  `n_circular` int(50) NOT NULL,
+  `fecha_emision` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `dirigido_a` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `observaciones` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `memorandum`
+--
+
+
+CREATE TABLE `memorandum` (
+  `id` int(50) NOT NULL,
+  `n_nota` int(50) NOT NULL,
+  `fecha_emision` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `dirigido_a` varchar(50) NOT NULL,
+  `observaciones` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `notas`
 --
 
@@ -39,6 +68,18 @@ CREATE TABLE `notas` (
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `circulares`
+--
+AALTER TABLE `circulares`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `memorandum`
+--
+ALTER TABLE `memorandum`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `notas`
