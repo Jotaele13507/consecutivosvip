@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+form{
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form input[type="text"], form input[type="password"], form input[type="datetime"]{
+    width: 40%;
+    background: #0b0f0942;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+}
+textarea{
+    width: 40%;
+    background: #0b0f0942;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;  
+}
+textarea:focus{
+    background: #78d68c6b;
+}
+form input[type="text"]:focus, form input[type="password"]:focus{
+    background: #78d68c6b;
+}
+form input[type="submit"]{
+    background: #383838;
+    font-size: 7pt;
+    color: #FFF;
+    border: none;
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .3s; 
+    font-weight: 900;
+    text-transform: uppercase;
+}
+form input[type="submit"]:hover{
+    background: rgba(10, 200, 26, 0.8);
+}
+.label-input100 {
+    font-size: 18px;
+    color: #383838;
+    line-height: 1.5;
+  }
+  
