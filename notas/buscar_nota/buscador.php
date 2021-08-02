@@ -9,7 +9,7 @@
                 <th>Acciones</th>
         </thead>
         <?php 
-$con = mysqli_connect('localhost','root','','correspondencia');
+$con = mysqli_connect('localhost','root','','consecutivos');
 $consulta = "SELECT * FROM notas WHERE n_nota LIKE LOWER('%".$_POST["buscar"]."%') OR dirigido_a LIKE LOWER ('%".$_POST["buscar"]."%')";
 $buscardor=mysqli_query($con,$consulta); 
 $resultado = mysqli_num_rows($buscardor);

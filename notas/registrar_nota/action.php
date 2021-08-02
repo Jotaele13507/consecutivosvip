@@ -1,5 +1,5 @@
 <?php 
-$conn = mysqli_connect('localhost', 'root', '', 'correspondencia');
+$conn = mysqli_connect('localhost', 'root', '', 'consecutivos');
 
     $n_nota = $_POST['n_nota'];
     //$fecha_emision = $_POST['fecha_emision'];
