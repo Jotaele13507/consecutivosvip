@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <title>Buscador</title>
+    <title>Buscador de Circulares</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,6 +26,7 @@
 
         </div>
         <button  class="btn btn-primary" onclick="buscar_ahora($('#buscar').val());">Buscar</button>
+        <button class="btn btn-danger" onclick="window.location.href='../../index.html'">Cerrar</button>
         <br><br>
 
         <div class="container" id="datos_buscador"></div>
