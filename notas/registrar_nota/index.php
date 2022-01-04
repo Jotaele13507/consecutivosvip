@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <!-- ico -->
+   <link rel="icon" href="../../images/up2.ico">
     <title>Dir. Adm - Consecutivos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +25,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center mb-5">
-                    <h1 class="heading-section">Dirección Administrativa<br /><small style="font-size:20px">Registro de Memorádum</small></h1>
+                    <h1 class="heading-section">Dirección Administrativa<br /><small style="font-size:20px">Registro de Notas</small></h1>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -36,7 +38,7 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" name="n_nota" placeholder="Número de Memorádum">
+                                                    <input type="text" class="form-control" name="n_nota" placeholder="Número de Nota">
                                                 </div>
                                             </div>
                                             <div class="col-md-12">

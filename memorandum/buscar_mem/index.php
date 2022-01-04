@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <title>Buscador</title>
+    <!-- ico -->
+   <link rel="icon" href="../../images/up2.ico">
+    <title>Dir. Adm - Consecutivos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -21,11 +23,11 @@
             <label class="form-label">Dirigida A</label>
             <input type="text" class="form-control" id="buscar" name="buscar">
 
-            <label class="form-label">Número de Nota</label>
+            <label class="form-label">Número de Memorandum</label>
             <input onkeyup="buscar_ahora($('#buscar_1').val());" type="text" class="form-control" id="buscar_1" name="buscar_1">
-
         </div>
         <button  class="btn btn-primary" onclick="buscar_ahora($('#buscar').val());">Buscar</button>
+        <button class="btn btn-danger" onclick="window.location.href='../../index.html'">Cerrar</button>
         <br><br>
 
         <div class="container" id="datos_buscador"></div>
